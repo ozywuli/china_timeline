@@ -37,7 +37,7 @@
 html, body {
   background: #FFF;
   color: #000;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 62.5%;
   font-style: normal;
   font-weight: normal;
@@ -169,6 +169,11 @@ select {
   font-family: arial, 黑体, 微软雅黑, 宋体, sans-serif;
 }
 
+/* line 43, ../sass/screen.scss */
+.heading-font {
+  font-family: 'Old Standard TT', serif;
+}
+
 /**
  * 4.0 $VARIABLES
  * -----------------------------------------------------------------------------
@@ -177,25 +182,128 @@ select {
  * 5.0 $EFFECTS
  * -----------------------------------------------------------------------------
  */
+/* line 72, ../sass/screen.scss */
+.scroll-down {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 4rem;
+  padding: 1rem;
+  color: #FFF;
+  font-size: 2rem;
+  line-height: 1;
+  border: 0.2rem solid #FFF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
 /**
  * 6.0 $GLOBALS
  * -----------------------------------------------------------------------------
  */
-/* line 60, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .globals {
   height: 100%;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .grid {
+  position: relative;
   height: 100%;
   min-height: 100%;
+}
+
+/* line 102, ../sass/screen.scss */
+.content {
+  position: relative;
 }
 
 /**
  * 7.0 $HEADER
  * -----------------------------------------------------------------------------
  */
+/* line 111, ../sass/screen.scss */
+.timeline-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  width: 30rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  direction: rtl;
+  z-index: 9999;
+}
+/* line 121, ../sass/screen.scss */
+.timeline-container a {
+  color: #FFF;
+}
+/* line 124, ../sass/screen.scss */
+.timeline-container .timeline-content {
+  direction: ltr;
+}
+
+/* line 129, ../sass/screen.scss */
+#timeline-toggle {
+  display: block;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  z-index: 10;
+}
+
+/* line 140, ../sass/screen.scss */
+.bar-icon {
+  height: 3px;
+  width: 20px;
+  margin-top: 4px;
+  background: #FFF;
+  display: block;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.15s linear;
+  -moz-transition: -webkit-transform 0.15s linear;
+  -ms-transition: -webkit-transform 0.15s linear;
+  -o-transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+/* line 159, ../sass/screen.scss */
+.active .bar-icon:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate3d(5px, 5px, 0);
+  -moz-transform: rotate(45deg) translate3d(5px, 5px, 0);
+  -ms-transform: rotate(45deg) translate3d(5px, 5px, 0);
+  -o-transform: rotate(45deg) translate3d(5px, 5px, 0);
+  transform: rotate(45deg) translate3d(5px, 5px, 0);
+}
+
+/* line 167, ../sass/screen.scss */
+.active .bar-icon:nth-child(2) {
+  opacity: 0;
+}
+
+/* line 171, ../sass/screen.scss */
+.active .bar-icon:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate3d(5px, -5px, 0);
+  -moz-transform: rotate(-45deg) translate3d(5px, -5px, 0);
+  -ms-transform: rotate(-45deg) translate3d(5px, -5px, 0);
+  -o-transform: rotate(-45deg) translate3d(5px, -5px, 0);
+  transform: rotate(-45deg) translate3d(5px, -5px, 0);
+}
+
 /**
  * 8.0 $CONTENT
  * -----------------------------------------------------------------------------
@@ -204,34 +312,64 @@ select {
  * 8.1 $LANDING
  * -----------------------------------------------------------------------------
  */
-/* line 88, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .landing-container {
-  background-color: green;
+  background-color: #012623;
 }
 
-/* line 92, ../sass/screen.scss */
-.landing-content {
-  position: relative;
-}
-
-/* line 96, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .landing-title-container {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-/* line 101, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .landing-title-container h1 {
-  color: gold;
+  color: #cba135;
+  line-height: 1;
 }
-/* line 105, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .landing-title-container .landing-logo {
   font-size: 30rem;
 }
-/* line 108, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .landing-title-container .landing-title {
-  font-size: 10rem;
-  line-height: 1;
+  font-size: 4rem;
+}
+
+/* line 214, ../sass/screen.scss */
+.confucius-container {
+  background-color: #7E4D55;
+}
+
+/* line 218, ../sass/screen.scss */
+.qin-container {
+  background-color: #111;
+}
+
+/* line 222, ../sass/screen.scss */
+.qin-title {
+  color: #cba135;
+}
+
+/* line 227, ../sass/screen.scss */
+.roc-container {
+  background-color: #bc0a0a;
+}
+
+/* line 232, ../sass/screen.scss */
+.nippon-container {
+  background-color: #FFF;
+}
+
+/* line 236, ../sass/screen.scss */
+.prc-container {
+  background-color: #a52715;
+}
+
+/* line 240, ../sass/screen.scss */
+.prc-title {
+  color: #bca50a;
 }
 
 /**
