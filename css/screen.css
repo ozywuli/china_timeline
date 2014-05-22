@@ -229,11 +229,11 @@ select {
 .timeline-container {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -25rem;
   overflow-y: auto;
-  width: 30rem;
+  width: 25rem;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.9);
   direction: rtl;
   z-index: 9999;
 }
@@ -247,61 +247,74 @@ select {
 }
 
 /* line 129, ../sass/screen.scss */
-#timeline-toggle {
+#timeline-open {
   display: block;
   position: fixed;
   top: 2rem;
   right: 2rem;
   padding: 1rem;
+  background-color: #000;
   -webkit-border-radius: 0.2rem;
   -moz-border-radius: 0.2rem;
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
   border-radius: 0.2rem;
   z-index: 10;
+  -webkit-transition: all 150ms ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 150ms ease 0s;
+  -o-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s;
+}
+/* line 139, ../sass/screen.scss */
+#timeline-open:hover {
+  background-color: #cba135;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
+#timeline-close {
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  background-color: red;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  vertical-align: bottom;
+  font-weight: bold;
+}
+
+/* line 157, ../sass/screen.scss */
 .bar-icon {
   height: 3px;
   width: 20px;
   margin-top: 4px;
   background: #FFF;
   display: block;
-  opacity: 1;
-  -webkit-transition: -webkit-transform 0.15s linear;
-  -moz-transition: -webkit-transform 0.15s linear;
-  -ms-transition: -webkit-transform 0.15s linear;
-  -o-transition: -webkit-transform 0.15s linear;
-  transition: transform 0.15s linear;
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
 }
 
-/* line 159, ../sass/screen.scss */
-.active .bar-icon:nth-child(1) {
-  -webkit-transform: rotate(45deg) translate3d(5px, 5px, 0);
-  -moz-transform: rotate(45deg) translate3d(5px, 5px, 0);
-  -ms-transform: rotate(45deg) translate3d(5px, 5px, 0);
-  -o-transform: rotate(45deg) translate3d(5px, 5px, 0);
-  transform: rotate(45deg) translate3d(5px, 5px, 0);
-}
-
-/* line 167, ../sass/screen.scss */
-.active .bar-icon:nth-child(2) {
-  opacity: 0;
+/* line 166, ../sass/screen.scss */
+.bar-icon:first-of-type {
+  margin-top: 0;
 }
 
 /* line 171, ../sass/screen.scss */
-.active .bar-icon:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translate3d(5px, -5px, 0);
-  -moz-transform: rotate(-45deg) translate3d(5px, -5px, 0);
-  -ms-transform: rotate(-45deg) translate3d(5px, -5px, 0);
-  -o-transform: rotate(-45deg) translate3d(5px, -5px, 0);
-  transform: rotate(-45deg) translate3d(5px, -5px, 0);
+#timeline li {
+  -webkit-transition: all 150ms ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 150ms ease 0s;
+  -o-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s;
+}
+/* line 173, ../sass/screen.scss */
+#timeline li:hover {
+  background-color: red;
+}
+/* line 176, ../sass/screen.scss */
+#timeline li a {
+  display: block;
+  padding: 1rem;
 }
 
 /**
@@ -312,62 +325,60 @@ select {
  * 8.1 $LANDING
  * -----------------------------------------------------------------------------
  */
-/* line 189, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .landing-container {
   background-color: #012623;
 }
 
-/* line 195, ../sass/screen.scss */
-.landing-title-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
 /* line 200, ../sass/screen.scss */
+.landing-title-container {
+  text-align: center;
+}
+/* line 204, ../sass/screen.scss */
 .landing-title-container h1 {
   color: #cba135;
   line-height: 1;
 }
-/* line 205, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .landing-title-container .landing-logo {
   font-size: 30rem;
 }
-/* line 208, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .landing-title-container .landing-title {
   font-size: 4rem;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .confucius-container {
   background-color: #7E4D55;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .qin-container {
   background-color: #111;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .qin-title {
   color: #cba135;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .roc-container {
   background-color: #bc0a0a;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .nippon-container {
   background-color: #FFF;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .prc-container {
   background-color: #a52715;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .prc-title {
   color: #bca50a;
 }
