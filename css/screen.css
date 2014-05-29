@@ -221,11 +221,16 @@ select {
   position: relative;
 }
 
+/* line 106, ../sass/screen.scss */
+.heading-title {
+  text-align: center;
+}
+
 /**
  * 7.0 $HEADER
  * -----------------------------------------------------------------------------
  */
-/* line 111, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .timeline-container {
   position: fixed;
   top: 0;
@@ -236,17 +241,18 @@ select {
   background-color: rgba(0, 0, 0, 0.9);
   direction: rtl;
   z-index: 9999;
+  font-size: 1.2rem;
 }
-/* line 121, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .timeline-container a {
   color: #FFF;
 }
-/* line 124, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .timeline-container .timeline-content {
   direction: ltr;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 #timeline-open {
   display: block;
   position: fixed;
@@ -266,12 +272,12 @@ select {
   -o-transition: all 150ms ease 0s;
   transition: all 150ms ease 0s;
 }
-/* line 139, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 #timeline-open:hover {
   background-color: #cba135;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 #timeline-close {
   display: inline-block;
   font-size: 2.5rem;
@@ -285,7 +291,7 @@ select {
   font-weight: bold;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .bar-icon {
   height: 3px;
   width: 20px;
@@ -294,25 +300,30 @@ select {
   display: block;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .bar-icon:first-of-type {
   margin-top: 0;
 }
 
-/* line 171, ../sass/screen.scss */
-#timeline li {
+/* line 176, ../sass/screen.scss */
+#timeline .timeline-titles {
+  padding: 0.5rem 1rem;
+  color: #FFF;
+}
+/* line 180, ../sass/screen.scss */
+#timeline .timeline-links {
   -webkit-transition: all 150ms ease;
   -webkit-transition-delay: 0s;
   -moz-transition: all 150ms ease 0s;
   -o-transition: all 150ms ease 0s;
   transition: all 150ms ease 0s;
 }
-/* line 173, ../sass/screen.scss */
-#timeline li:hover {
+/* line 182, ../sass/screen.scss */
+#timeline .timeline-links:hover {
   background-color: red;
 }
-/* line 176, ../sass/screen.scss */
-#timeline li a {
+/* line 185, ../sass/screen.scss */
+#timeline .timeline-links a {
   display: block;
   padding: 1rem;
 }
@@ -325,60 +336,64 @@ select {
  * 8.1 $LANDING
  * -----------------------------------------------------------------------------
  */
-/* line 194, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .landing-container {
-  background-color: #012623;
+  background: #012623 url("../img/han_watchtower_dunhuang.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .landing-title-container {
   text-align: center;
 }
-/* line 204, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .landing-title-container h1 {
-  color: #cba135;
+  color: #FFF;
   line-height: 1;
 }
-/* line 209, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .landing-title-container .landing-logo {
   font-size: 30rem;
 }
-/* line 212, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .landing-title-container .landing-title {
   font-size: 4rem;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .confucius-container {
   background-color: #7E4D55;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .qin-container {
   background-color: #111;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .qin-title {
   color: #cba135;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .roc-container {
   background-color: #bc0a0a;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .nippon-container {
   background-color: #FFF;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .prc-container {
   background-color: #a52715;
 }
 
-/* line 244, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .prc-title {
   color: #bca50a;
 }

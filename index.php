@@ -6,6 +6,8 @@
 
 <?php require( 'partials/01_landing.php' ); ?>
 
+<?php require( 'partials/shang.php' ); ?>
+
 <?php require( 'partials/confucius.php' ); ?>
 
 <?php require( 'partials/qin.php' ); ?>

@@ -21,9 +21,10 @@ $(function() {
 $(function() {
   $('#fullpage').fullpage({
     menu: '#timeline',
-    anchors: ['firstSlide', 'secondSlide', 'thirdSlide'],
+    anchors: ['firstSection', 'secondSection', 'thirdSection'],
     autoScrolling: false,
-    easing: 'easeInOutQuad'
+    easing: 'easeInOutQuad',
+    scrollOverflow: true
   });
 });
 

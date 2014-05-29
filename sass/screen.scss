@@ -103,6 +103,10 @@ $prcYellow: #BCA50A;
   position: relative;
 }
 
+.heading-title {
+  text-align: center;
+}
+
 /**
  * 7.0 $HEADER
  * -----------------------------------------------------------------------------
@@ -118,6 +122,7 @@ $prcYellow: #BCA50A;
   background-color: rgba(0, 0, 0, 0.9);
   direction: rtl;
   z-index: 9999;
+  font-size: 1.2rem;
   a {
     color: #FFF;
   }
@@ -168,7 +173,11 @@ $prcYellow: #BCA50A;
 }
 
 #timeline {
-  li {
+  .timeline-titles {
+    padding: 0.5rem 1rem;
+    color: #FFF;
+  }
+  .timeline-links {
     @include transition(all 150ms ease 0s);
     &:hover {
       background-color: red;
@@ -192,7 +201,9 @@ $prcYellow: #BCA50A;
  */
 
 .landing-container {
-  background-color: $jade;
+  background: $jade url('../img/han_watchtower_dunhuang.jpg') no-repeat center center fixed;
+  @include background-size(cover);
+
 }
 
 
@@ -202,7 +213,7 @@ $prcYellow: #BCA50A;
   text-align: center;
 
   h1 {
-    color: $gold;
+    color: #FFF;
     line-height: 1;
   }
 
