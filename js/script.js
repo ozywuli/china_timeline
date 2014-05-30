@@ -1,3 +1,17 @@
+// Copyright Year
+
+$(function() {
+  var copyrightDate = new Date();
+  var copyrightYear = copyrightDate.getFullYear();
+
+  if ( copyrightYear != '2014' ) {
+    $( '#copyright-year-future' ).append( '&#8722; ' + copyrightYear + ' ' );
+  }
+});
+
+
+
+
 // Scroll Down Landing Page
 
 $(function() {

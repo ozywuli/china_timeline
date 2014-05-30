@@ -1,3 +1,16 @@
+<div class="credits-container grid section" id="">
+
+  <div class="credits-content">
+    <header class="credits-title-container">
+      <h1 class="credits-title heading-title">Credits</h1>
+    </header>
+
+    <a href="http://www.ozywuli.com">Ozy Wu-Li</a>
+    <p>2014 <span id="copyright-year-future"></span>&copy; By <a href="http://www.ozywuli.com">Ozy Wu-Li</a></p>
+
+  </div>
+</div>
+
 </div> <!-- End Globals -->
 
 
